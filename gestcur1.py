@@ -94,14 +94,14 @@ elif (eleccion == 'Graficos Alumnos'):
                                ['Histograma','Dispersion',
                                 'Barras'])
     if (grafalumns == 'Histograma'):
-        grades_df = pd.read_csv('C:\\Users\\conza\\ControlCursos\\gestion_cursos\\gestion_cursos\\gradedata3.csv')  
+        grades_df = pd.read_csv('/app/webapps/gradedata3.csv')  
         sns.set_style('darkgrid')
         fig, ax = plt.subplots()
         ax = sns.histplot(grades_df)
         st.pyplot(fig)
     
     elif (grafalumns == 'Dispersion'):
-        grades_df = pd.read_csv('C:\\Users\\conza\\ControlCursos\\gestion_cursos\\gestion_cursos\\gradedata3.csv')  
+        grades_df = pd.read_csv('/app/webapps/gradedata3.csv')  
         selected_x_var = st.selectbox("Selecciona variable 'X' eje abscisas", 
           ['hrs_estudio', 'edad', 'hrs_ejercicio', 'calf1']) 
         selected_y_var = st.selectbox("Selecciona variable 'Y'eje ordenadas", 
@@ -120,7 +120,7 @@ elif (eleccion == 'Graficos Alumnos'):
         st.pyplot(fig)
     
     elif (grafalumns == 'Barras'):
-        grades_df = pd.read_csv('C:\\Users\\conza\\ControlCursos\\gestion_cursos\\gestion_cursos\\gradedata3.csv')  
+        grades_df = pd.read_csv('/app/webapps/gradedata3.csv')  
         selected_x_var = st.selectbox("Selecciona variable 'X' eje abscisas", 
           ['hrs_estudio', 'edad', 'hrs_ejercicio', 'calf1']) 
         selected_y_var = st.selectbox("Selecciona variable 'Y'eje ordenadas", 
