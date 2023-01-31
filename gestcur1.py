@@ -82,7 +82,7 @@ if (eleccion == 'CRUD Profesores'):
     st.title('Profesores: Altas, Bajas, Cambios, Consultas')
     # llama a procedimiento para control de datos de profesores
     # funcion CRUD: Create, Remove, UpDate de un archivo csv como parametro
-    crud('C:\\Users\\conza\\ControlCursos\\gestion_cursos\\gestion_cursos\\Profes3.csv')
+    crud('/app/webapps/Profes3.csv')
 
 elif (eleccion == 'Graficos Alumnos'):        
     st.title("Calificaciones de estudiantes") 
